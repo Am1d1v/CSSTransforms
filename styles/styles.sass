@@ -111,10 +111,23 @@ body
         transform: translateX(-50%)
         height: 400px
         transition: 0.5s 
+    &:hover
+        img
+            height: 450px
+            left: 80%  
+        .content
+            opacity: 1
+            left: 10%
 
 .content       
     display: flex
     flex-direction: column
+    position: relative
+    width: 40%
+    left: 20%
+    color: #fff
+    opacity: 0.3
+    transition: 0.5s
     a
         text-decoration: none    
         background-color: #fff
@@ -123,3 +136,5 @@ body
         padding: 3px
         width: 100px
         text-align: center
+    p
+        max-width: 120px    

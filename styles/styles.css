@@ -29,10 +29,24 @@ body {
   height: 400px;
   transition: 0.5s;
 }
+.card:hover img {
+  height: 450px;
+  left: 80%;
+}
+.card:hover .content {
+  opacity: 1;
+  left: 10%;
+}
 
 .content {
   display: flex;
   flex-direction: column;
+  position: relative;
+  width: 40%;
+  left: 20%;
+  color: #fff;
+  opacity: 0.3;
+  transition: 0.5s;
 }
 .content a {
   text-decoration: none;
@@ -42,4 +56,7 @@ body {
   padding: 3px;
   width: 100px;
   text-align: center;
+}
+.content p {
+  max-width: 120px;
 }/*# sourceMappingURL=styles.css.map */
