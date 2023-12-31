@@ -13,37 +13,33 @@ body {
 
 .card {
   position: relative;
-  width: 300px;
-  height: 270px;
-  border-radius: 10px;
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+  width: 500px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(45deg, #d41e8e, #491f8f);
+  border-radius: 20px;
+  padding: 15px;
+}
+.card img {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 400px;
   transition: 0.5s;
-  padding: 20px 40px;
 }
 
-.imageBox {
-  position: relative;
-  width: 100%;
-  height: 100%;
+.content {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
 }
-.imageBox:hover img {
-  transform: translateY(-200px);
-  transition: 0.5s ease;
-}
-.imageBox img {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  border-radius: 10px;
-  transition: 0.5s ease;
-  transform: translateY(-100px);
-}
-.imageBox h2 {
-  text-align: center;
-}
-.imageBox p {
+.content a {
+  text-decoration: none;
+  background-color: #fff;
+  margin: 10px;
+  color: #000;
+  padding: 3px;
+  width: 100px;
   text-align: center;
 }/*# sourceMappingURL=styles.css.map */
